@@ -1,0 +1,24 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lerna": "^6.5.1",
+    "lint-staged": "^13.2.1",
+    "prettier": "2.8.8"
+  },
+  "dependencies": {
+    "@zero-song/utils": "^1.0.6"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "prettier:check": "prettier --check ./packages",
+    "prettier:write": "prettier --write ./packages"
+  },
+  "lint-staged": {
+    "packages/**/*.{ts,tsx,less,json,css,md}": "prettier --write --ignore-unknown"
+  }
+}

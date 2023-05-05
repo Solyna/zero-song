@@ -1,0 +1,64 @@
+{
+  "name": "@zero-song/navigate",
+  "version": "1.0.1",
+  "description": "路由包",
+  "keywords": [
+    "zero-navigate"
+  ],
+  "author": "songling <songling_9121@163.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "unpkg": "dist/index.js",
+  "typings": "lib/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist",
+    "lib",
+    "es"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/song00/zero-song.git"
+  },
+  "scripts": {
+    "build:dev": "cross-env NODE_ENV=development rollup -c rollup.config.js --bundleConfigAsCjs ",
+    "build:prod": "cross-env NODE_ENV=production rollup -c rollup.config.js --bundleConfigAsCjs ",
+    "tsc": "tsc",
+    "test": "node ./__tests__/navigate.test.js"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.4",
+    "@babel/plugin-external-helpers": "^7.18.6",
+    "@babel/plugin-transform-runtime": "^7.21.4",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.21.4",
+    "@babel/runtime-corejs3": "^7.21.0",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^24.1.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-replace": "^5.0.2",
+    "@rollup/plugin-terser": "^0.4.1",
+    "@types/node": "^18.15.11",
+    "core-js": "^3.29.1",
+    "cross-env": "^7.0.3",
+    "rollup": "^3.20.2",
+    "rollup-plugin-clear": "^2.0.7",
+    "rollup-plugin-sourcemaps": "^0.6.3",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "typescript": "^5.0.3"
+  },
+  "dependencies": {
+    "@zero-song/hooks": "^1.0.2",
+    "history": "^5.3.0"
+  }
+}
