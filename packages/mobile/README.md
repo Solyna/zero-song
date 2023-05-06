@@ -1,11 +1,13 @@
-# `mobile`
+# `@zero-song/mobile`
 
-> TODO: description
+> 移动端 H5 框架封装
 
 ## Usage
 
 ```
-const mobile = require('mobile');
+import { createApp } from '@zero-song/mobile'
+import appStore from './app.store';
+import './app.less';
 
-// TODO: DEMONSTRATE API
+export default createApp(appStore);
 ```
