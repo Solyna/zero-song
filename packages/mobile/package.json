@@ -1,0 +1,127 @@
+{
+  "name": "@zero-song/mobile",
+  "version": "1.0.0",
+  "description": "移动端H5框架封装",
+  "keywords": [
+    "zero-song/mobile"
+  ],
+  "author": "songling <songling@health-100.cn>",
+  "homepage": "https://github.com/Solyna/zero-song#readme",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "unpkg": "dist/index.js",
+  "typings": "lib/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist",
+    "lib",
+    "es"
+  ],
+  "engines": {
+    "node": ">=14.17.0"
+  },
+  "sideEffects": [
+    "dist/*",
+    "es/**/style/*",
+    "lib/**/style/*",
+    "*.less"
+  ],
+  "browserslist": [
+    "iOS >= 10",
+    "Android >= 10",
+    "Firefox > 65",
+    "chrome > 72",
+    "safari >= 10",
+    ">0.2%",
+    "not dead",
+    "IE 11",
+    "not IE 10",
+    "last 2 versions",
+    "not op_mini all"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Solyna/zero-song.git"
+  },
+  "scripts": {
+    "build:dev": "cross-env NODE_ENV=development rollup -c rollup.config.js --bundleConfigAsCjs && tsc",
+    "build:prod": "cross-env NODE_ENV=production rollup -c rollup.config.js --bundleConfigAsCjs && tsc",
+    "tsc": "tsc",
+    "test": "node ./__tests__/mobile.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/Solyna/zero-song/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "peerDependencies": {
+    "antd-mobile": ">=5.0.0",
+    "antd-mobile-icons": ">=0.1.0",
+    "axios": ">=1.0.0",
+    "core-js": ">=3",
+    "mobx": ">=6.0.0",
+    "mobx-react-lite": ">=3.0.0",
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0",
+    "react-router-dom": ">=6.0.0",
+    "require": ">=2.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.4",
+    "@babel/plugin-external-helpers": "^7.18.6",
+    "@babel/plugin-transform-runtime": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/runtime-corejs3": "^7.21.0",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^24.1.0",
+    "@rollup/plugin-image": "^3.0.2",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-replace": "^5.0.2",
+    "@rollup/plugin-terser": "^0.4.1",
+    "@types/node": "^18.15.11",
+    "@types/platform": "^1.3.4",
+    "@types/react": "^18.0.31",
+    "@types/react-dom": "^18.0.11",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/react-transition-group": "^4.4.5",
+    "antd-mobile": "^5.28.2",
+    "antd-mobile-icons": "^0.3.0",
+    "autoprefixer": "^10.4.14",
+    "core-js": "^3.30.0",
+    "cross-env": "^7.0.3",
+    "cssnano": "^6.0.0",
+    "less": "^4.1.3",
+    "mobx": "^6.8.0",
+    "mobx-react-lite": "^3.4.0",
+    "postcss": "^8.4.21",
+    "postcss-nested": "^6.0.1",
+    "postcss-preset-env": "^8.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.10.0",
+    "rollup": "^3.20.2",
+    "rollup-plugin-clear": "^2.0.7",
+    "rollup-plugin-filesize": "^10.0.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-sourcemaps": "^0.6.3",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "typescript": "^5.0.3"
+  },
+  "dependencies": {
+    "@zero-song/cache": "^1.0.0",
+    "@zero-song/hooks": "^1.0.0",
+    "@zero-song/navigate": "^1.0.0",
+    "@zero-song/net": "^1.0.0",
+    "@zero-song/utils": "^1.0.0",
+    "react-transition-group": "^4.4.5"
+  }
+}
