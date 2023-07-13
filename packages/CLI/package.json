@@ -34,9 +34,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Solyna/zero-song.git"
+    "url": "https://github.com/Solyna/zero-song.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "bugs": {
     "url": "https://github.com/Solyna/zero-song/issues"
-  }
+  },
+  "gitHead": "20b427aceaf3c5d8b07315ebd75382c6a14636d3"
 }

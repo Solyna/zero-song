@@ -1,0 +1,13 @@
+15 error Error: Command failed with exit code 1: git remote update
+15 error Received disconnect from 20.205.243.166 port 22:11: Bye Bye
+15 error Disconnected from 20.205.243.166 port 22
+15 error fatal: Could not read from remote repository.
+15 error
+15 error Please make sure you have the correct access rights
+15 error and the repository exists.
+15 error     at makeError (/usr/local/lib/node_modules/lerna/node_modules/execa/lib/error.js:59:11)
+15 error     at Function.module.exports.sync (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:186:17)
+15 error     at Object.execSync (/usr/local/lib/node_modules/lerna/node_modules/@lerna/child-process/index.js:39:16)
+15 error     at updateRemote (/usr/local/lib/node_modules/lerna/dist/cli.js:6629:22)
+15 error     at isBehindUpstream (/usr/local/lib/node_modules/lerna/dist/cli.js:6619:7)
+15 error     at VersionCommand.initialize (/usr/local/lib/node_modules/lerna/dist/cli.js:6953:57)
