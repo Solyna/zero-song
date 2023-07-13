@@ -134,5 +134,3 @@ git commit -m "Keep calm and commit"
 输入登录账号、密码、邮箱，输入邮箱收到的短码，登录成功。
 
 5. 登录成功后执行发布命令 `lerna publish`，选择模式，输入'Yes'，回车后等待发布成功。
-
-
