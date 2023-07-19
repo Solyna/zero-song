@@ -42,3 +42,9 @@ export { restArguments } from './restArguments';
 export { run } from './run';
 export { throttle } from './throttle';
 export { unique } from './unique';
+export {
+  decodeUTF8,
+  encodeUTF8,
+  encodeBase64,
+  decodeBase64,
+} from './nacl-util';

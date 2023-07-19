@@ -38,7 +38,7 @@ export default {
       targets: ['dist', 'es'],
       watch: true,
     }),
-    resolve({ extensions: ['.ts'] }),
+    resolve({ extensions: ['.ts','.js'] }),
     typescript({ useTsconfigDeclarationDir: true }),
     commonjs({}),
     babel({
