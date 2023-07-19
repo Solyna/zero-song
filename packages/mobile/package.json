@@ -1,6 +1,6 @@
 {
   "name": "@zero-song/mobile",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "移动端H5框架封装",
   "keywords": [
     "zero-song/mobile"
@@ -120,8 +120,8 @@
     "@zero-song/cache": "^1.0.0",
     "@zero-song/hooks": "^1.0.4",
     "@zero-song/navigate": "^1.0.3",
-    "@zero-song/net": "^1.0.0",
-    "@zero-song/utils": "^1.0.0",
+    "@zero-song/net": "^1.0.7",
+    "@zero-song/utils": "^1.0.10",
     "react-transition-group": "^4.4.5"
   }
 }

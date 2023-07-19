@@ -1,6 +1,6 @@
 {
   "name": "@zero-song/net",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "网络请求封装",
   "keywords": [
     "zero-song/net"
@@ -57,7 +57,7 @@
     "typescript": "^5.0.3"
   },
   "dependencies": {
-    "@zero-song/utils": "^1.0.9"
+    "@zero-song/utils": "^1.0.10"
   },
   "gitHead": "278c78f9886f298574d94b3a3010abbc7c1e8287"
 }
