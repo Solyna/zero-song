@@ -3,14 +3,14 @@
  * @example
  *
  */
-import { useRef } from "react";
-import useCreation from "./useCreation";
-import useUpdate from "./useUpdate";
+import { useRef } from 'react';
+import useCreation from './useCreation';
+import useUpdate from './useUpdate';
 const observer = (initialVal, cb) => {
     const proxy = new Proxy(initialVal, {
         get(target, key, receiver) {
             const res = Reflect.get(target, key, receiver);
-            return typeof res === "object"
+            return typeof res === 'object'
                 ? observer(res, cb)
                 : Reflect.get(target, key);
         },

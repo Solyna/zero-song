@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef } from 'react';
 export function useSingleton(callback) {
     const called = useRef(false);
     if (called.current)
