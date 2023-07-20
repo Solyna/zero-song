@@ -3,7 +3,7 @@
   "version": "1.0.12",
   "description": "通用工具包",
   "keywords": [
-    "@zero-song/utils"
+    "arrayBufferToHex"
   ],
   "author": "songling <songling_9121@163.com>",
   "homepage": "",

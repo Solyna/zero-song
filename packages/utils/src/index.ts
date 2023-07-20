@@ -51,3 +51,4 @@ export {
   decodeBase64,
 } from './nacl-util';
 export * from './sha256';
+export { sleep } from './sleep';
