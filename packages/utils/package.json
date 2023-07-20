@@ -1,6 +1,6 @@
 {
   "name": "@zero-song/utils",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "通用工具包",
   "keywords": [
     "arrayBufferToHex"

@@ -44,11 +44,6 @@ export { throttle } from './throttle';
 export { unique } from './unique';
 export { dateFormat } from './dateFormat';
 export { arrayBufferToHex } from './arrayBufferToHex';
-export {
-  decodeUTF8,
-  encodeUTF8,
-  encodeBase64,
-  decodeBase64,
-} from './nacl-util';
+export { decodeUTF8, encodeUTF8 } from './utf8';
 export * from './sha256';
 export { sleep } from './sleep';
