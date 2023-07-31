@@ -33,7 +33,7 @@ export default {
       return;
     }
   },
-  external: ['react', 'react-dom', '@zero-song/cache'],
+  external: ['react', 'react-dom'],
   plugins: [
     clear({
       targets: ['dist', 'es'],

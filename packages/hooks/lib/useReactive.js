@@ -1,7 +1,5 @@
 /**
  * @description 一种具备响应式的useState
- * @example
- *
  */
 import { useRef } from 'react';
 import useCreation from './useCreation';
